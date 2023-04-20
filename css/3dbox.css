@@ -1,0 +1,83 @@
+:root{
+    --cube-heigth: 200px;
+    --cube-width: 200px;
+    --cube-depth: 200px;
+    --face-color: hsl(52, 9%, 55%);
+    --face-gradient: hsla(180, 1%, 39%, 0.529);
+}
+.cube {
+    position: relative;
+    width: var(--cube-width);
+    height: var(--cube-heigth);
+    transform-style: preserve-3d;
+    transform: perspective(800px) rotateY(0deg); 
+    transition: transform 1s;
+    animation: cubeRotating 15s infinite;
+}
+
+@keyframes cubeRotating {
+    0%{
+        transform: perspective(800px) rotateY(0deg);
+    }
+    16%{
+        transform: perspective(800px) rotateY(-90deg);    
+    }
+    33%{
+        transform: perspective(800px) rotateY(-90deg) rotateZ(90deg);
+    }
+    50%{
+        transform: perspective(800px) rotateY(-90deg) rotateZ(180deg);
+    }
+    67%{
+        transform: perspective(800px) rotateY(-180deg) rotateZ(180deg);
+    }
+    83%{
+        transform: perspective(800px) rotateY(-180deg) rotateZ(180deg) rotateX(-90deg);
+    }
+    100%{
+        transform: perspective(800px) rotateY(-180deg) rotateZ(180deg) rotateX(-180deg);
+    }
+}
+
+
+  
+.side {
+    position: absolute;
+    width: var(--cube-width);
+    height: var(--cube-heigth);
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    line-height: 200px;
+    border: 1px white solid;
+}
+  
+.front {
+    background-image: radial-gradient(var(--face-color), var(--face-gradient));
+    transform: translateZ(calc(var(--cube-depth) / 2));
+}
+  
+.back {
+    background-image: radial-gradient(var(--face-color), var(--face-gradient));
+    transform: translateZ(calc(-1 * var(--cube-depth) / 2)) rotateY(180deg);
+}
+  
+.right {
+    background-image: radial-gradient(var(--face-color), var(--face-gradient));
+    transform: translateX(calc(var(--cube-depth) / 2)) rotateY(90deg);
+}
+  
+.left {
+    background-image: radial-gradient(var(--face-color), var(--face-gradient));
+    transform: translateX(calc(-1 * var(--cube-depth) / 2)) rotateY(-90deg);
+}
+  
+.top {
+    background-image: radial-gradient(var(--face-color), var(--face-gradient));
+    transform: translateY(calc(-1 * var(--cube-depth) / 2)) rotateX(90deg);
+}
+  
+.bottom {
+    background-image: radial-gradient(var(--face-color), var(--face-gradient));
+    transform: translateY(calc((var(--cube-depth) / 2))) rotateX(-90deg);
+}

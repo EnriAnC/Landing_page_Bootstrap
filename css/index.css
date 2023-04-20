@@ -1,0 +1,23 @@
+@import url("./3dbox.css");
+@import url("./page1.css");
+@import url("./page2.css");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@300&display=swap');
+
+.parallax {
+    background-image: url("./img/bg5-Empanaderia.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero, .article{
+    background-color: hsla(246, 24%, 48%, 0.459);
+    width: 100%;
+    position: relative;
+}
+
+#page2, #page3{
+    background-position-y: bottom;
+}
+

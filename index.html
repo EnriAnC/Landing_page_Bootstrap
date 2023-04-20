@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" style="background-image: url('./img/bg5-Empanaderia.jpg');">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chetak Bakery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="app">
+        <div class="d-flex flex-column overflow-auto">
+            
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light position-fixed top-0 start-0 end-0 bg-tranparent fw-nomal p-3" style="z-index: 1;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#page1" style="color:hsla(0, 0%, 100%, 0.800);">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(255, 255, 255, 0.402);"> 
+                        <span class="navbar-toggler-icon" ></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#page2" style="color:hsla(0, 0%, 100%, 0.800);">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#page3" style="color:hsla(0, 0%, 100%, 0.800);">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#page4" style="color:hsla(0, 0%, 100%, 0.800);">Contact</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main -->
+            <!-- Page1: Hero -->
+            <div class="min-vh-100 parallax" style="background-image: url('./img/bg5-Empanaderia.jpg'); contain: content;" id="page1">
+                <div class="hero min-vh-100 d-flex flex-column justify-content-center align-items-center">
+                    <!-- Hero -->
+                    <h1 class="mb-4 px-4" style="text-shadow: 0px 0px 2.5px white;">
+                        <span>Welcome</span> 
+                        <span>to</span> 
+                        <span>Chetak Bakery</span> 
+                    </h1>
+                    <p class="text-center fw-700 fs-5" style="color: rgb(218, 218, 218); text-shadow: 0px 0px 10px black;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero ad veritatis soluta repudiandae quia. soluta repudiandae quia  </p>
+                    <style>
+                        .btnsGoTo a:last-child:hover{
+                            background-color: rgba(0, 0, 0, 0.497);
+                        }
+                    </style>
+                    <!-- Call to action -->
+                    <div class="btnsGoTo">
+                        <a href="#page4" class="btn btn-dark text-white shadow border-dark">Visit us!</a>
+                        <a href="#" class="btn text-white shadow border-dark" target="_blank">Go to marketplace</a>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .bg-custom-1{
+                    background-color: hsl(248, 25%, 24%)
+                }
+            </style>
+
+            <!-- Page2: About us -->
+            <div class="parallax min-vh-100" style="background-image: url('./img/bg3-Empanaderia.jpg');" id="page2">
+                <div class="article min-vh-100 position-relative d-flex flex-column justify-content-between">
+
+                    <!-- Title section -->
+                    <div class="bg-custom-1 shadow text-white text-center shadow" style="height:4.5rem;">
+                        <h2 class="pt-3">About us</h2>
+                    </div>
+
+                    <!-- Container of cards describing about us  -->
+                    <div class="d-flex flex-wrap shadow bg-custom-1 text-white p-2 w-100" style="min-height: 45vh;">
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-sm-4 col-md-4 d-flex justify-content-center align-items-center p-2">
+                            <div class="h-100 w-100  rounded-3 shadow d-flex flex-column justify-content-evenly align-items-center"
+                            style="background: rgba(46, 50, 60, 0.25);">
+                            <span class="p-1 text-center fs-5">Quality</span>
+                                <div class="rounded-circle bg-white" style="height: 72px; width: 72px;">
+                                </div>
+                                <span class="p-1 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur error numquam quos.</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-12 col-sm-4 col-md-4 d-flex justify-content-center align-items-center p-2">
+                            <div class="h-100 w-100  rounded-3 shadow d-flex flex-column justify-content-evenly align-items-center"
+                            style="background: rgba(46, 50, 60, 0.25);">
+                                <span class="p-1 text-center fs-5">Sincerity</span>
+                                <div class="rounded-circle bg-white" style="height: 72px; width: 72px;">
+
+                                </div>
+                                <span class="p-1 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur error numquam quos.</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-12 col-sm-4 col-md-4 d-flex justify-content-center align-items-center p-2">
+                            <div class="h-100 w-100  rounded-3 shadow d-flex flex-column justify-content-evenly align-items-center"
+                            style="background: rgba(46, 50, 60, 0.25);">
+                                <span class="p-1 text-center fs-5">Speed</span>
+                                <div class="rounded-circle bg-white" style="height: 72px; width: 72px;">
+
+                                </div>
+                                <span class="p-1 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur error numquam quos.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page3: Our services --->
+            <div class="min-vh-100 parallax" style="background-image: url('./img/bg2-Empanaderia.jpg');" id="page3">
+
+                <div class="article min-vh-100 d-flex flex-column justify-content-between">
+                    
+                    <!-- Title section -->
+                    <h2 class="d-flex justify-content-center align-items-center w-100">
+                        <span class="text-white pt-4 pb-3">Our services</span>
+                    </h2>
+
+                    <!-- Container of cards describing our services -->
+                    <div class="d-flex flex-wrap shadow bg-custom-1 text-white p-2 w-100" style="min-height: 50vh;">
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-sm-4 col-md-4 d-flex justify-content-center align-items-center p-2">
+                            <div class="h-100 w-100  rounded-3 shadow d-flex flex-column justify-content-evenly align-items-center"
+                            style="background: rgba(46, 50, 60, 0.25);">
+                            <span class="p-1 text-center fs-5">Wholesale</span>
+                                <div class="rounded-circle bg-white" style="height: 72px; width: 72px;">
+
+                                </div>
+                                <span class="p-1 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur error numquam quos.</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-12 col-sm-4 col-md-4 d-flex justify-content-center align-items-center p-2">
+                            <div class="h-100 w-100  rounded-3 shadow d-flex flex-column justify-content-evenly align-items-center"
+                            style="background: rgba(46, 50, 60, 0.25);">
+                                <span class="p-1 text-center fs-5">Retail</span>
+                                <div class="rounded-circle bg-white" style="height: 72px; width: 72px;">
+
+                                </div>
+                                <span class="p-1 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur error numquam quos.</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-12 col-sm-4 col-md-4 d-flex justify-content-center align-items-center p-2">
+                            <div class="h-100 w-100 rounded-3 shadow d-flex flex-column justify-content-evenly align-items-center"
+                            style="background: rgba(46, 50, 60, 0.25);">
+                                <span class="p-1 text-center fs-5">Per unit</span>
+                                <div class="rounded-circle bg-white" style="height: 72px; width: 72px;">
+                                    
+                                </div>
+                                <span class="p-1 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur error numquam quos.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page4: Contact us -->
+            <div class="min-vh-100 parallax" style="background-image: url('./img/bg5-Empanaderia.jpg');" id="page4">
+                <div class="article min-vh-100 d-flex flex-column justify-content-evenly align-items-center" >
+
+                        <!-- Title section -->
+                        <div class="h-25 col-12 text-center pt-4 text-white">
+                            <h2 class="mb-4">Contact us</h2>
+                        </div>
+                        <div class="h-75 w-100 d-flex flex-wrap justify-content-center align-items-center">
+
+                            <!-- Google Maps Frame -->
+                            <iframe style="min-height: 45vh;" class="col-10 col-lg-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14750.027033366938!2d-68.94113952461672!3d-22.447583358076045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96ac09ea969352d5%3A0xcaa4adc4267939f7!2sUniversidad%20Tecnol%C3%B3gica%20de%20Chile%20-%20Inacap!5e0!3m2!1ses-419!2scl!4v1681959755380!5m2!1ses-419!2scl"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            <!-- How contact our -->
+                            <div style="min-height: 45vh;"  class="col-10 col-lg-4 py-2 px-1 d-flex flex-wrap align-items-center bg-dark text-white text-center"> 
+
+                                <!-- Box1 -->
+                                <div class="pt-3 px-2 col-12 col-sm-6 h-50 d-flex flex-column justify-content-evenly align-items-center ">
+                                    <h2 class="fs-5">Address</h2>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path fill="#fff" d="M480.089 566Q509 566 529.5 545.411q20.5-20.588 20.5-49.5Q550 467 529.411 446.5q-20.588-20.5-49.5-20.5Q451 426 430.5 446.589q-20.5 20.588-20.5 49.5Q410 525 430.589 545.5q20.588 20.5 49.5 20.5ZM480 897q133-121 196.5-219.5T740 504q0-117.79-75.292-192.895Q589.417 236 480 236t-184.708 75.105Q220 386.21 220 504q0 75 65 173.5T480 897Zm0 79Q319 839 239.5 721.5T160 504q0-150 96.5-239T480 176q127 0 223.5 89T800 504q0 100-79.5 217.5T480 976Zm0-472Z"/></svg>
+                                    </div>
+                                    <p class="d-flex flex-column px-3" style="font-size:.8rem;">
+                                        <span>Av. Granaderos 3250, Calama, Región de Antofagasta, Chile</span>
+                                    </p>
+                                </div>
+
+                                <!-- Box2 -->
+                                <div class="pt-3 pe-2 col-12 col-sm-6 h-50 d-flex flex-column justify-content-evenly align-items-center ">
+                                    <h2 class="fs-5">Email</h2>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path fill="#fff" d="M140 896q-24 0-42-18t-18-42V316q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140 371v465h680V371L480 594Zm0-60 336-218H145l335 218ZM140 371v-55 520-465Z"/></svg>
+                                        
+                                    </div>
+                                    <p class="d-flex flex-column" style="font-size:.8rem;">
+                                        <a class="text-decoration-none" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=enriqueansa@gmail.com" target="_blank">enriqueansa@gmail.com</a>
+                                        <a class="text-decoration-none" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=enrique.ansa@inacapmail.cl" target="_blank">enrique.ansa@inacapmail.cl</a>
+                                    </p>
+                                </div>
+
+                                <!-- Box3 -->
+                                <div class="pt-3 px-2 col-12 col-sm-6 h-50 d-flex flex-column justify-content-evenly align-items-center ">
+                                    <h2 class="fs-5">Call us</h2>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path fill="#fff" d="M795 936q-122 0-242.5-60T336 720q-96-96-156-216.5T120 261q0-19.286 12.857-32.143T165 216h140q13.611 0 24.306 9.5Q340 235 343 251l27 126q2 14-.5 25.5T359 422L259 523q56 93 125.5 162T542 802l95-98q10-11 23-15.5t26-1.5l119 26q15.312 3.375 25.156 15.188Q840 740 840 756v135q0 19.286-12.857 32.143T795 936ZM229 468l81-82-23-110H180q0 39 12 85.5T229 468Zm369 363q41 19 89 31t93 14V769l-103-21-79 83ZM229 468Zm369 363Z"/></svg>
+                                    </div>
+                                    <p class="d-flex flex-column" style="font-size:.8rem;">
+                                        <a class="text-decoration-none" href="tel:+56 9 39087961">+56 9 39087961</a>
+                                        <a class="text-decoration-none" href="tel:+55 2 123456">+55 2 123456</a>
+                                    </p>
+                                </div>
+
+                                <!-- Box4 -->
+                                <div class="pt-3 px-2 col-12 col-sm-6 h-50 d-flex flex-column justify-content-evenly align-items-center ">
+                                    <h2 class="fs-5">Contact us</h2>
+                                    <div>
+                                        <p>Visit our local!</p>
+                                    </div>
+                                    <div class="d-flex">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
